@@ -1,0 +1,2 @@
+# Log-Dateien nicht versionieren (werden zur Laufzeit erzeugt)
+logs/*.log

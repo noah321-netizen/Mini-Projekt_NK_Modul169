@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  webserver:
+    build: .
+    container_name: modul169-webserver
+    ports:
+      # Host-Port 8080 → Container-Port 80
+      - "8080:80"
+    volumes:
+      # Website-Dateien aus lokalem Verzeichnis einbinden
+      - ./website:/usr/share/nginx/html:ro
+      # Log-Dateien in lokalem Verzeichnis speichern
+      - ./logs:/var/log/nginx
+    restart: unless-stopped

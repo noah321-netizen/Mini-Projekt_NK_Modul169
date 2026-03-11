@@ -1,0 +1,3 @@
+# logs/.gitkeep
+# Dieses Verzeichnis wird für NGINX-Log-Dateien verwendet.
+# Die eigentlichen Log-Dateien werden von Git ignoriert (siehe .gitignore).
